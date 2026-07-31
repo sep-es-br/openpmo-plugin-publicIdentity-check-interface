@@ -23,7 +23,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             from components.java
-            artifactId = 'openpmo-plugin-publicIdentity_check-interface'
+            artifactId = 'openpmo-plugin-publicIdentity-check-interface'
         }
     }
 }
