@@ -4,7 +4,7 @@ plugins {
 }
 
 group = providers.gradleProperty('group').getOrElse('br.gov.es.pmo')
-version = providers.gradleProperty('version').getOrElse('1.0.1')
+version = providers.gradleProperty('version').getOrElse('1.0.2')
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8
@@ -24,7 +24,22 @@ publishing {
         mavenJava(MavenPublication) {
             from components.java
             artifactId = 'openpmo-plugin-publicIdentity-check-interface'
+            pom {
+                licenses {
+                    license {
+                        name = 'GNU General Public License v3.0'
+                        url = 'https://www.gnu.org/licenses/gpl-3.0.html'
+                        distribution = 'repo'
+                    }
+                }
+            }
         }
+    }
+}
+
+tasks.named('jar') {
+    from(rootProject.file('LICENSE')) {
+        into 'META-INF'
     }
 }
 

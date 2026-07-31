@@ -30,9 +30,13 @@ Contrato Java independente de provedor para localizar e validar identidades que 
 Artefato:
 
 ```text
-com.github.sep-es-br:openpmo-plugin-publicIdentity-check-interface:v1.0.1
+com.github.sep-es-br:openpmo-plugin-publicIdentity-check-interface:v1.0.2
 ```
 
 ## Implementações
 
 A implementação GOVES está no projeto `openpmo-plugin-publicIdentity_check-goves`.
+
+## Licença
+
+Este projeto é distribuído sob a licença GNU General Public License v3.0. Consulte o arquivo [LICENSE](LICENSE).
