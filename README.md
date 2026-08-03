@@ -30,7 +30,7 @@ Contrato Java independente de provedor para localizar e validar identidades que 
 Artefato:
 
 ```text
-com.github.sep-es-br:openpmo-plugin-publicIdentity-check-interface:v1.0.2
+com.github.sep-es-br:openpmo-plugin-user-a-identify-interface:v2.0.0
 ```
 
 ## Implementações

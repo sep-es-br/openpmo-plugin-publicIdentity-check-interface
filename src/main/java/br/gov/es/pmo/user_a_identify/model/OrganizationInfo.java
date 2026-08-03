@@ -1,4 +1,4 @@
-package br.gov.es.pmo.public_identity_check.model;
+package br.gov.es.pmo.user_a_identify.model;
 
 import java.util.Objects;
 
