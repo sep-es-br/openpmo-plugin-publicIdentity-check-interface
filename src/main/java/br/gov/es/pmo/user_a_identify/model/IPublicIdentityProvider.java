@@ -11,4 +11,6 @@ public interface IPublicIdentityProvider {
     PublicAgentSearchResult findPublicAgentsByName(String name);
 
     PublicIdentityResult findPublicAgentBySub(String sub);
+
+    PublicAgentInfoResult findPublicAgentInformationBySub(String sub);
 }
