@@ -20,7 +20,6 @@ public class PublicIdentityResultTest {
             "12345678900",
             "sub",
             "Name",
-            "Nickname",
             "mail@example.com",
             null,
             assignments
@@ -39,7 +38,6 @@ public class PublicIdentityResultTest {
             "12345678900",
             "sub",
             "Name",
-            "Nickname",
             "mail@example.com",
             null,
             null

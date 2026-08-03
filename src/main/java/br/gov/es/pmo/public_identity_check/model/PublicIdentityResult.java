@@ -11,7 +11,6 @@ public final class PublicIdentityResult {
     private final String cpf;
     private final String sub;
     private final String name;
-    private final String nickname;
     private final String email;
     private final String corporateEmail;
     private final List<PublicAgentAssignment> assignments;
@@ -22,7 +21,6 @@ public final class PublicIdentityResult {
         final String cpf,
         final String sub,
         final String name,
-        final String nickname,
         final String email,
         final String corporateEmail,
         final List<PublicAgentAssignment> assignments
@@ -32,7 +30,6 @@ public final class PublicIdentityResult {
         this.cpf = cpf;
         this.sub = sub;
         this.name = name;
-        this.nickname = nickname;
         this.email = email;
         this.corporateEmail = corporateEmail;
         this.assignments = Collections.unmodifiableList(
@@ -45,7 +42,6 @@ public final class PublicIdentityResult {
         final String cpf,
         final String sub,
         final String name,
-        final String nickname,
         final String email,
         final String corporateEmail,
         final List<PublicAgentAssignment> assignments
@@ -56,7 +52,6 @@ public final class PublicIdentityResult {
             cpf,
             sub,
             name,
-            nickname,
             email,
             corporateEmail,
             assignments
@@ -83,7 +78,6 @@ public final class PublicIdentityResult {
             null,
             null,
             null,
-            null,
             Collections.emptyList()
         );
     }
@@ -106,10 +100,6 @@ public final class PublicIdentityResult {
 
     public String getName() {
         return this.name;
-    }
-
-    public String getNickname() {
-        return this.nickname;
     }
 
     public String getEmail() {
