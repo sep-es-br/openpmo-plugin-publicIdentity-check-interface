@@ -5,6 +5,7 @@ public final class PublicAgentAssignment {
     private final String roleGuid;
     private final String roleName;
     private final String roleType;
+    private final String workLocationGuid;
     private final OrganizationInfo organization;
 
     public PublicAgentAssignment(
@@ -13,9 +14,20 @@ public final class PublicAgentAssignment {
         final String roleType,
         final OrganizationInfo organization
     ) {
+        this(roleGuid, roleName, roleType, null, organization);
+    }
+
+    public PublicAgentAssignment(
+        final String roleGuid,
+        final String roleName,
+        final String roleType,
+        final String workLocationGuid,
+        final OrganizationInfo organization
+    ) {
         this.roleGuid = roleGuid;
         this.roleName = roleName;
         this.roleType = roleType;
+        this.workLocationGuid = workLocationGuid;
         this.organization = organization;
     }
 
@@ -29,6 +41,10 @@ public final class PublicAgentAssignment {
 
     public String getRoleType() {
         return this.roleType;
+    }
+
+    public String getWorkLocationGuid() {
+        return this.workLocationGuid;
     }
 
     public OrganizationInfo getOrganization() {
